@@ -1,0 +1,16 @@
+/*
+This Sass file contains all the variables and mixins which are used in other files
+*/
+
+$primary-color: yellowgreen;
+$secondary-color: #20232a;
+
+@mixin border-style {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+@mixin padding-margin {
+  margin: 20px;
+  padding: 20px;
+}

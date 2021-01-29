@@ -1,0 +1,40 @@
+/*
+SASS File to style APP root Component
+*/
+@import "./VariablesAndMixins.scss";
+
+body {
+  box-sizing: border-box;
+}
+
+#header {
+  height: 35px;
+  background-color: $primary-color;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  @include padding-margin;
+  @include border-style;
+}
+
+.info-tile {
+  @include border-style;
+  background-color: $secondary-color;
+  color: white;
+  min-width: 200px;
+  min-height: 50px;
+  transition: all 0.5s;
+  @include padding-margin;
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}
